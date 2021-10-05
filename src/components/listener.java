@@ -8,7 +8,6 @@ public class listener implements ActionListener {
     private final appButton button;
     private final appFrame frame;
 
-
     public listener(appButton button, appFrame frame){
         this.button = button;
         this.frame = frame;

@@ -8,7 +8,7 @@ public class appFrame {
 
     private final Frame frame;
     private Label label;
-    private utils utils;
+    private final utils utils;
 
     public appFrame(){
         this.frame = new Frame("Calculator");
@@ -51,14 +51,11 @@ public class appFrame {
         new appButton("8", 120, 160, this.frame, this);
         new appButton("9", 200, 160, this.frame, this);
         new appButton(".", 120, 400, this.frame, this);
-
         new appButton("+", 280, 400, this.frame, this);
         new appButton("=", 200, 400, this.frame, this);
         new appButton("-", 280, 320, this.frame, this);
         new appButton("*", 280, 240, this.frame, this);
         new appButton("/", 280, 160, this.frame, this);
-
-
     }
 
     public void addLabel(String value){
@@ -69,6 +66,4 @@ public class appFrame {
         return label.getText();
     }
     public utils getUtils(){return this.utils;}
-
-
 }

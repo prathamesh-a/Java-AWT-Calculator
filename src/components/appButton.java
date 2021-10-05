@@ -1,7 +1,6 @@
 package components;
 
 import java.awt.*;
-import java.awt.event.ActionListener;
 
 public class appButton{
 
@@ -34,9 +33,4 @@ public class appButton{
     public String getName(){
         return this.label;
     }
-    public appButton setSize(int h, int w){
-        this.button.setBounds(this.x, this.y, w, h);
-        return this;
-    }
-
 }
